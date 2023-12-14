@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Book Example</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="flipbook">
+        <div class="page">Page 0</div>
+        <div class="page">Page 1
+            <div id="my-player"></div>
+        </div>
+        <div class="page">Page 2</div>
+        <div class="page">Page 3</div>
+        <div class="page">Page 4</div>
+        <div class="page">Page 10</div>
+        <!-- Add more pages as needed -->
+    </div>
+    <button id="prev-button">Previous</button>
+    <button id="next-button">Next</button>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="turnjs4/lib/turn.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
