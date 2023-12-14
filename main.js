@@ -2,8 +2,8 @@ $(document).ready(function() {
     var flipbook = $("#flipbook");
 
     flipbook.turn({
-        width: 800,
-        height: 600,
+        width: 1000,
+        height: 800,
         autoCenter: true
     });
 
@@ -18,8 +18,3 @@ $(document).ready(function() {
     });
 });
 
-flowplayer('#my-player', {
-    // configuration options
-    src: 'path/to/your/video.mp4',
-    // other options...
-});
