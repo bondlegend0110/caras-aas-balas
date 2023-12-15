@@ -1,10 +1,13 @@
 #flipbook .page {
     background-color: white;
-    text-align: center;
-    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Adjusts based on the content */
 }
 
-.flipbook-container, .page1, .ce988b98-d4f2-4a8e-86d7-201baa3a593c{
+.flipbook-container, #page, .ce988b98-d4f2-4a8e-86d7-201baa3a593c{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,6 +15,52 @@
     height: 100%; /* Adjust the height as needed */
 }
 
+img {
+    max-width: 60%; /* Percentage of the parent container */
+    max-height: 80%;
+}
+.img30 img{
+    max-height: 25%;
+}
+.img20 img{
+    max-height: 20%;
+}
+
+.img50 img{
+    max-height: 35%;
+}
+.page span{
+    max-width: 70%;
+    max-height: 80%;
+}
+
+#page0{
+    background-image: url('./imgs/mf_front.png'); /* Path to your image */
+    background-size: cover; /* This will cover the entire div area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.inside1{
+    background-image: url('./imgs/mf_inside-1.png'); /* Path to your image */
+    background-size: cover; /* This will cover the entire div area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.inside2{
+    background-image: url('./imgs/mf_inside-2.png'); /* Path to your image */
+    background-size: cover; /* This will cover the entire div area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#pageLast{
+    background-image: url('./imgs/mf_back.png'); /* Path to your image */
+    background-size: cover; /* This will cover the entire div area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
 #prev-button, #next-button {
     background-color: #f2f2f2;
     border: 1px solid #d3d3d3;
@@ -22,11 +71,6 @@
 }
 #prev-button:hover, #next-button:hover {
     background-color: #e9e9e9;
-}
-
-.page iframe {
-    width: 500px;
-    height: 800px;
 }
 
 .clickMeG42{
