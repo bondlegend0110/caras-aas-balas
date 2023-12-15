@@ -4,7 +4,7 @@
     font-size: 24px;
 }
 
-.flipbook-container {
+.flipbook-container, .page1, .ce988b98-d4f2-4a8e-86d7-201baa3a593c{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,4 +27,9 @@
 .page iframe {
     width: 500px;
     height: 800px;
+}
+
+.clickMeG42{
+    background-color: black;
+    color: coral;
 }
